@@ -12,12 +12,12 @@ const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
-const BotName = 'BOT ./MrG3P5'; // Nama Bot Whatsapp
-const instagramlu = 'https://www.instagram.com/mrg3p5_id/'; // Nama Instagramlu cok
-const whatsapplu = '0895-2325-8649'; // Nomor whatsapplu cok
-const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/L0jifxElwo6B2QyxuabLtU'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/CxrUD2MnUv5KGko3CsW6DT'; // OFFICIAL GRUP LU 2
+const BotName = 'CSR BOT'; // Nama Bot Whatsapp
+const instagramlu = 'https://www.instagram.com/sarangga87_'; // Nama Instagramlu cok
+const whatsapplu = '0853-3655-2251'; // Nomor whatsapplu cok
+const kapanbotaktif = 'Jika Beruntung'; // Kapan bot lu aktif
+const grupch1 = '-'; // OFFICIAL GRUP LU 1
+const grupch2 = '-'; // OFFICIAL GRUP LU 2
 //
 const
 {
@@ -132,10 +132,11 @@ if (text.includes('#nulis')){
 
 
 
-if (text.includes("#ytmp3")){
-const teks = text.replace(/#ytmp3 /, "")
-axios.get(`https://mhankbarbar.herokuapp.com/api/yta?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+if (text.includes(".ytmp3")){
+const teks = text.replace(/.yt /, "")
+axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
+	conn.sendMessage(id, '[WAIT] Searching...⏳', MessageType.text)
+    let hasil = `✅Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahn\nJudul: ${res.data.title}\n\nDuration: ${res.data.inText}\n\nAudio: ${res.data.linkAudioOnly}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
