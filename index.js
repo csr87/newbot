@@ -230,7 +230,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
-else if (text == 'salam'){
+else if (text == 'mikum'){
 conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
 else if (text == 'asalamualaikum'){
@@ -240,10 +240,10 @@ else if (text == 'Assalamualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
 else if (text == 'p'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'pa pe pa pe asw' ,MessageType.text);
 }
 else if (text == 'P'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'pa pe pa pe asw' ,MessageType.text);
 }
 else if (text == 'halo'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
@@ -273,10 +273,52 @@ else if (text == 'min'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
 else if (text == 'sayang'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'apa sayang?' ,MessageType.text);
 }
-else if (text == 'i love u'){
+else if (text.includes('love u')){
 conn.sendMessage(id, 'love you too' ,MessageType.text);
+}
+else if (text.includes('cuk')){
+conn.sendMessage(id, 'cak cok cak cok asw' ,MessageType.text);
+}
+else if (text.includes('Cuk')){
+conn.sendMessage(id, 'cak cok cak cok asw' ,MessageType.text);
+}
+else if (text.includes('cok')){
+conn.sendMessage(id, 'cak cok cak cok asw' ,MessageType.text);
+}
+else if (text.includes('Cok')){
+conn.sendMessage(id, 'cak cok cak cok asw' ,MessageType.text);
+}
+else if (text.includes('ces')){
+conn.sendMessage(id, 'apa?' ,MessageType.text);
+}
+else if (text.includes('Ces')){
+conn.sendMessage(id, 'apa?' ,MessageType.text);
+}
+else if (text.includes('sar')){
+conn.sendMessage(id, 'apa?' ,MessageType.text);
+}
+else if (text.includes('Sar')){
+conn.sendMessage(id, 'apa?' ,MessageType.text);
+}
+else if (text.includes('oala')){
+conn.sendMessage(id, 'jancok' ,MessageType.text);
+}
+else if (text.includes('Oala')){
+conn.sendMessage(id, 'jancok' ,MessageType.text);
+}
+else if (text.includes('oalah')){
+conn.sendMessage(id, 'jancok' ,MessageType.text);
+}
+else if (text.includes('Oalah')){
+conn.sendMessage(id, 'jancok' ,MessageType.text);
+}
+else if (text.includes('wkwk')){
+conn.sendMessage(id, 'tolol' ,MessageType.text);
+}
+else if (text.includes('Wkwk')){
+conn.sendMessage(id, 'tolol' ,MessageType.text);
 }
 else if (text == 'mas'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
@@ -525,7 +567,7 @@ conn.sendMessage(id, 'kirim #gacha cewek/cowok\n\nContoh: #gacha cewek' ,Message
             let stik = fs.readFileSync('temp/' + jam + '.webp')
             conn.sendMessage(id, stik, MessageType.sticker)
          });
-      }
+      } 
    }
 
    if (messageType === MessageType.text)
